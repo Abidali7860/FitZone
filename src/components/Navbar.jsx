@@ -135,11 +135,14 @@ const Navbar = () => {
             to="/"
             onClick={() => setIsOpen(false)}
           >
-            <img
-              src="/logo.png"
-              alt="FitZone"
-              className="w-32"
-            />
+            <h2 className="text-3xl text-white font-black uppercase tracking-tight">
+
+                FIT
+                <span className="text-[#9AF358]">
+                  ZONE
+                </span>
+
+              </h2>
           </NavLink>
 
           <button
