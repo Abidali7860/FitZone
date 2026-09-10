@@ -189,7 +189,7 @@ const About = () => {
           {/* CTA */}
 
           <Link
-            href="/about"
+            to="/about"
             className="group mt-9 inline-flex items-center gap-3 border-b border-[#9AF358] pb-2 text-sm font-bold uppercase tracking-wider text-[#9AF358] transition-all duration-300 hover:gap-5"
           >
             Discover Our Story

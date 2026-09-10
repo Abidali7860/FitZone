@@ -147,7 +147,7 @@ const PopularPrograms = () => {
           {/* View All */}
 
           <Link
-            href="/programs"
+            to="/programs"
             data-aos="fade-up"
             className="group inline-flex w-fit items-center gap-3 border-b border-[#9AF358] pb-2 text-sm font-bold uppercase tracking-wider text-[#9AF358]"
           >
