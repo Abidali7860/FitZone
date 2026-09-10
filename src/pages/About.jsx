@@ -69,10 +69,10 @@ const About = () => {
           HERO
       ===================================================== */}
 
-      <section className="relative flex min-h-[65vh] items-center overflow-hidden">
+      <section className="relative flex h-[50vh] md:h-[65vh] items-center overflow-hidden">
 
         <img
-          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2000&q=80"
+          src="src/assets/images/hero/hero1.webp"
           alt="FitZone Gym"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -83,7 +83,7 @@ const About = () => {
 
         <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-28 md:px-10 lg:px-16">
 
-          <div className="max-w-4xl">
+          <div className="max-w-4xl" data-aos="fade-up">
 
             <div className="mb-5 flex items-center gap-3">
 
@@ -135,6 +135,8 @@ const About = () => {
 
             <div
               key={stat.label}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
               className={`p-7 text-center md:p-10 ${
                 index !== stats.length - 1
                   ? "border-r border-white/10"
@@ -169,12 +171,12 @@ const About = () => {
 
           {/* IMAGE */}
 
-          <div className="relative">
+          <div className="relative" data-aos="fade-down">
 
             <div className="relative h-[500px] overflow-hidden rounded-2xl md:h-[600px]">
 
               <img
-                src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1200&q=80"
+                src="src/assets/images/about/abt.webp"
                 alt="Fitness training"
                 className="h-full w-full object-cover transition duration-700 hover:scale-105"
               />
@@ -203,7 +205,7 @@ const About = () => {
 
           {/* CONTENT */}
 
-          <div>
+          <div data-aos="fade-up" data-aos-delay="150">
 
             <div className="mb-5 flex items-center gap-3">
 
@@ -299,7 +301,7 @@ const About = () => {
 
         <div className="mx-auto max-w-7xl">
 
-          <div className="mb-12">
+          <div className="mb-12" data-aos="fade-up">
 
             <div className="mb-5 flex items-center gap-3">
 
@@ -327,7 +329,7 @@ const About = () => {
 
             {/* Mission */}
 
-            <div className="group rounded-2xl border border-white/10 bg-[#050807] p-8 transition-all duration-500 hover:border-[#9AF358]/40 md:p-10">
+            <div className="group rounded-2xl border border-white/10 bg-[#050807] p-8 transition-all duration-500 hover:border-[#9AF358]/40 md:p-10" data-aos="fade-down">
 
               <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#9AF358] text-black">
 
@@ -350,7 +352,7 @@ const About = () => {
 
             {/* Vision */}
 
-            <div className="group rounded-2xl border border-white/10 bg-[#050807] p-8 transition-all duration-500 hover:border-[#9AF358]/40 md:p-10">
+            <div className="group rounded-2xl border border-white/10 bg-[#050807] p-8 transition-all duration-500 hover:border-[#9AF358]/40 md:p-10" data-aos="fade-up" data-aos-delay="150">
 
               <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#9AF358] text-black">
 
@@ -389,7 +391,7 @@ const About = () => {
 
             {/* LEFT */}
 
-            <div>
+            <div data-aos="fade-down">
 
               <div className="mb-5 flex items-center gap-3">
 
@@ -431,6 +433,8 @@ const About = () => {
                 return (
                   <div
                     key={feature.id}
+                    data-aos="fade-up"
+                    data-aos-delay={feature.id * 100}
                     className="group rounded-2xl border border-white/10 bg-[#080d0b] p-7 transition-all duration-500 hover:-translate-y-1 hover:border-[#9AF358]/40"
                   >
 
@@ -468,14 +472,14 @@ const About = () => {
       <section className="relative overflow-hidden px-6 py-24 md:px-10 lg:px-16 lg:py-32">
 
         <img
-          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2000&q=80"
+          src="src/assets/images/hero/hero1.webp"
           alt="Training"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
         <div className="absolute inset-0 bg-black/80" />
 
-        <div className="relative z-10 mx-auto max-w-5xl text-center">
+        <div className="relative z-10 mx-auto max-w-5xl text-center" data-aos="zoom-in">
 
           <p className="text-sm font-semibold uppercase tracking-[4px] text-[#9AF358]">
             Our Philosophy
@@ -514,7 +518,7 @@ const About = () => {
 
         <div className="mx-auto overflow-hidden rounded-3xl border border-[#9AF358]/20 bg-[#9AF358]">
 
-          <div className="flex flex-col items-start justify-between gap-8 p-8 md:p-12 lg:flex-row lg:items-center lg:p-16">
+          <div className="flex flex-col items-start justify-between gap-8 p-8 md:p-12 lg:flex-row lg:items-center lg:p-16" data-aos="fade-up">
 
             <div className="max-w-2xl">
 

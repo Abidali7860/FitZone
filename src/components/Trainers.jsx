@@ -4,9 +4,9 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import trainers from "../data/trainers";
 
-const TrainerCard = ({ trainer }) => {
+const TrainerCard = ({ trainer, index }) => {
   return (
-    <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#080d0b] transition-all duration-500 hover:-translate-y-2 hover:border-[#9AF358]/40 hover:shadow-[0_20px_60px_rgba(154,243,88,0.08)]">
+    <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#080d0b] transition-all duration-500 hover:-translate-y-2 hover:border-[#9AF358]/40 hover:shadow-[0_20px_60px_rgba(154,243,88,0.08)]" data-aos="fade-up" data-aos-delay={index * 100}>
 
       {/* ================= IMAGE ================= */}
 
@@ -116,7 +116,7 @@ const Trainers = () => {
 
         <div className="mb-12 flex flex-col justify-between gap-7 md:flex-row md:items-end">
 
-          <div>
+          <div data-aos="fade-down">
 
             {/* Small Title */}
 
@@ -149,7 +149,7 @@ const Trainers = () => {
 
           {/* Description + Link */}
 
-          <div className="max-w-md">
+          <div className="max-w-md" data-aos="fade-up" data-aos-delay="150">
 
             <p className="text-sm leading-7 text-gray-400 md:text-base">
               Our certified trainers are here to push your limits, improve
@@ -179,10 +179,11 @@ const Trainers = () => {
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
 
-          {trainers.map((trainer) => (
+          {trainers.map((trainer, index) => (
             <TrainerCard
               key={trainer.id}
               trainer={trainer}
+              index={index}
             />
           ))}
 

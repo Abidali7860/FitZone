@@ -24,7 +24,7 @@ const Programs = () => {
       <section className="relative flex min-h-[55vh] items-center overflow-hidden px-6 pt-28 md:px-10 lg:px-16">
 
         <img
-          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2000&q=80"
+          src="src/assets/images/hero/hero1.webp"
           alt="Gym"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -35,7 +35,7 @@ const Programs = () => {
 
         <div className="relative z-10 mx-auto w-full max-w-7xl">
 
-          <div className="max-w-3xl">
+          <div className="max-w-3xl" data-aos="fade-up">
 
             <div className="mb-5 flex items-center gap-3">
 
@@ -78,7 +78,7 @@ const Programs = () => {
 
           {/* Header */}
 
-          <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+          <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between" data-aos="fade-up">
 
             <div>
 
@@ -132,6 +132,8 @@ const Programs = () => {
 
                 <div
                   key={program.id}
+                  data-aos="fade-up"
+                  data-aos-delay={program.id * 80}
                   className="group overflow-hidden rounded-2xl border border-white/10 bg-[#080d0b] transition-all duration-500 hover:-translate-y-2 hover:border-[#9AF358]/40 hover:shadow-[0_20px_60px_rgba(154,243,88,0.08)]"
                 >
 
@@ -248,7 +250,7 @@ const Programs = () => {
 
             /* No Result */
 
-            <div className="mt-12 rounded-2xl border border-white/10 py-20 text-center">
+            <div className="mt-12 rounded-2xl border border-white/10 py-20 text-center" data-aos="fade-up">
 
               <h3 className="text-2xl font-bold">
                 No Program Found

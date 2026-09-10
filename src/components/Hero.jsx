@@ -10,7 +10,7 @@ const slides = [
   {
     id: 1,
     image:
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2000&q=80",
+      "src/assets/images/hero/hero1.webp",
     smallTitle: "WELCOME TO FITZONE",
     title: "BUILD YOUR",
     highlight: "STRONGEST",
@@ -21,7 +21,7 @@ const slides = [
   {
     id: 2,
     image:
-      "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=2000&q=80",
+      "src/assets/images/hero/hero2.webp",
     smallTitle: "TRAIN HARD. STAY STRONG.",
     title: "YOUR BODY",
     highlight: "YOUR POWER",
@@ -33,7 +33,7 @@ const slides = [
 
 const Hero = () => {
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-black">
+    <section className="relative md:h-screen h-[50vh] w-full overflow-hidden bg-black">
 
       <Swiper
         modules={[Autoplay, EffectFade]}
@@ -49,7 +49,7 @@ const Hero = () => {
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
             <div
-              className="relative h-screen w-full bg-cover bg-center"
+              className="relative md:h-screen h-[50vh] w-full bg-cover bg-center"
               style={{
                 backgroundImage: `url(${slide.image})`,
               }}
@@ -68,7 +68,7 @@ const Hero = () => {
 
               <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-6 md:px-10 lg:px-16">
 
-                <div className="max-w-3xl pt-16">
+                <div className="max-w-3xl pt-16" data-aos="fade-up" data-aos-duration="900">
 
                   {/* Small Heading */}
 

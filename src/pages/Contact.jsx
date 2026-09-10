@@ -107,10 +107,10 @@ const Contact = () => {
           HERO
       ===================================================== */}
 
-      <section className="relative flex min-h-[60vh] items-center overflow-hidden px-6 pt-28 md:px-10 lg:px-16">
+      <section className="relative flex h-[50vh] md:h-[60vh] items-center overflow-hidden px-6 pt-28 md:px-10 lg:px-16">
 
         <img
-          src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=2000&q=80"
+          src="src/assets/images/about/contact.webp"
           alt="Contact FitZone"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -121,7 +121,7 @@ const Contact = () => {
 
         <div className="relative z-10 mx-auto w-full max-w-7xl">
 
-          <div className="max-w-4xl">
+          <div className="max-w-4xl" data-aos="fade-up">
 
             <div className="mb-5 flex items-center gap-3">
 
@@ -176,6 +176,8 @@ const Contact = () => {
             return (
               <div
                 key={item.id}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
                 className={`p-7 lg:p-8 ${
                   index !== contactInfo.length - 1
                     ? "border-b border-white/10 lg:border-b-0 lg:border-r"
@@ -333,7 +335,7 @@ const Contact = () => {
 
           {/* FORM */}
 
-          <div className="rounded-2xl border border-white/10 bg-[#080d0b] p-6 md:p-8 lg:p-10">
+          <div className="rounded-2xl border border-white/10 bg-[#080d0b] p-6 md:p-8 lg:p-10" data-aos="fade-left" data-aos-delay="150">
 
             {/* Success Message */}
 
@@ -595,7 +597,7 @@ const Contact = () => {
 
             {/* MAP PLACEHOLDER */}
 
-            <div className="relative h-[450px] overflow-hidden rounded-2xl border border-white/10 bg-[#050807]">
+            <div className="relative h-[450px] overflow-hidden rounded-2xl border border-white/10 bg-[#050807]" data-aos="fade-left" data-aos-delay="150">
 
               <div className="absolute inset-0 opacity-30">
 
@@ -655,7 +657,7 @@ const Contact = () => {
 
         <div className="mx-auto max-w-7xl rounded-3xl bg-[#9AF358] p-8 md:p-12 lg:p-16">
 
-          <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
+          <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center" data-aos="zoom-in">
 
             <div>
 

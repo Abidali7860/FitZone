@@ -29,14 +29,14 @@ const About = () => {
 
         {/* ================= LEFT IMAGE ================= */}
 
-        <div className="relative">
+        <div className="relative" data-aos="fade-down">
 
           {/* Image */}
 
           <div className="relative h-[450px] overflow-hidden rounded-2xl md:h-[550px]">
 
             <img
-              src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1200&q=80"
+              src="src/assets/images/about/abt.webp"
               alt="FitZone Gym"
               className="h-full w-full object-cover transition duration-700 hover:scale-105"
             />
@@ -72,7 +72,7 @@ const About = () => {
 
         {/* ================= RIGHT CONTENT ================= */}
 
-        <div>
+        <div data-aos="fade-up" data-aos-delay="150">
 
           {/* Small Heading */}
 
@@ -138,7 +138,7 @@ const About = () => {
 
           <div className="mt-7 grid gap-4 sm:grid-cols-2">
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3" data-aos="fade-up" data-aos-delay="100">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#9AF358] text-black">
                 <Check size={15} strokeWidth={3} />
               </span>
@@ -149,7 +149,7 @@ const About = () => {
             </div>
 
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3" data-aos="fade-up" data-aos-delay="200">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#9AF358] text-black">
                 <Check size={15} strokeWidth={3} />
               </span>
@@ -160,7 +160,7 @@ const About = () => {
             </div>
 
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3" data-aos="fade-up" data-aos-delay="300">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#9AF358] text-black">
                 <Check size={15} strokeWidth={3} />
               </span>
@@ -171,7 +171,7 @@ const About = () => {
             </div>
 
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3" data-aos="fade-up" data-aos-delay="400">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#9AF358] text-black">
                 <Check size={15} strokeWidth={3} />
               </span>

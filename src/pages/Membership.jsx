@@ -61,7 +61,7 @@ const faqs = [
       <section className="relative flex min-h-[60vh] items-center overflow-hidden px-6 pt-28 md:px-10 lg:px-16">
 
         <img
-          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2000&q=80"
+          src="src/assets/images/hero/hero1.webp"
           alt="FitZone Membership"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -72,7 +72,7 @@ const faqs = [
 
         <div className="relative z-10 mx-auto w-full max-w-7xl">
 
-          <div className="max-w-4xl">
+          <div className="max-w-4xl" data-aos="fade-up">
 
             <div className="mb-5 flex items-center gap-3">
 
@@ -115,7 +115,7 @@ const faqs = [
 
           {/* HEADER */}
 
-          <div className="text-center">
+          <div className="text-center" data-aos="fade-up">
 
             <p className="text-sm font-semibold uppercase tracking-[4px] text-[#9AF358]">
               Flexible Plans
@@ -136,7 +136,7 @@ const faqs = [
 
           {/* BILLING TOGGLE */}
 
-          <div className="mt-10 flex justify-center">
+          <div className="mt-10 flex justify-center" data-aos="fade-up" data-aos-delay="100">
 
             <div className="flex rounded-full border border-white/10 bg-white/5 p-1">
 
@@ -175,6 +175,8 @@ const faqs = [
 
               <div
                 key={plan.id}
+                data-aos="fade-up"
+                data-aos-delay={plan.id * 120}
                 className={`relative rounded-2xl border p-7 transition-all duration-500 md:p-8 ${
                   plan.popular
                     ? "border-[#9AF358] bg-[#0a100d] shadow-[0_20px_80px_rgba(154,243,88,0.08)]"
@@ -426,13 +428,15 @@ const faqs = [
 
     <div className="mt-12 space-y-3">
 
-      {faqs.map((faq) => {
+      {faqs.map((faq, index) => {
 
         const isOpen = openFaq === faq.id;
 
         return (
           <div
             key={faq.id}
+            data-aos="fade-up"
+            data-aos-delay={index * 75}
             className={`overflow-hidden rounded-xl border transition-all duration-300 ${
               isOpen
                 ? "border-[#9AF358]/40 bg-[#080d0b]"
@@ -515,7 +519,7 @@ const faqs = [
 
         <div className="mx-auto max-w-7xl rounded-3xl bg-[#9AF358] p-8 md:p-12 lg:p-16">
 
-          <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
+          <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center" data-aos="zoom-in">
 
             <div>
 

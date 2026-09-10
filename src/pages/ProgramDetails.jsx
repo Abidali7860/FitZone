@@ -63,16 +63,16 @@ const ProgramDetails = () => {
 
         {/* Overlay */}
 
-        <div className="absolute inset-0 bg-black/75" />
+        <div className="absolute inset-0 bg-black/50" />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-black/30" />
 
 
         {/* Content */}
 
         <div className="relative z-10 mx-auto flex min-h-[75vh] max-w-7xl items-end px-6 pb-16 pt-32 md:px-10 lg:px-16 lg:pb-20">
 
-          <div className="max-w-4xl">
+          <div className="max-w-4xl" data-aos="fade-up">
 
             {/* Back */}
 
@@ -107,7 +107,7 @@ const ProgramDetails = () => {
 
             {/* Title */}
 
-            <h1 className="mt-5 text-5xl font-black uppercase leading-[0.9] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
+            <h1 className="mt-5 text-3xl font-black uppercase leading-[0.9] tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               {program.title}
             </h1>
 
@@ -231,7 +231,7 @@ const ProgramDetails = () => {
 
           <div>
 
-            <div className="sticky top-28 rounded-2xl border border-white/10 bg-[#080d0b] p-7">
+          <div className="sticky top-28 rounded-2xl border border-white/10 bg-[#080d0b] p-7" data-aos="fade-left" data-aos-delay="150">
 
               <p className="text-xs font-semibold uppercase tracking-[3px] text-[#9AF358]">
                 Program Details

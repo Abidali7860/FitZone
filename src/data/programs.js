@@ -1,3 +1,7 @@
+import weightLossImage from "../assets/images/hero/hero1.webp";
+import muscleBuildingImage from "../assets/images/hero/hero2.webp";
+import strengthTrainingImage from "../assets/images/about/abt.webp";
+
 const programs = [
   {
     id: 1,
@@ -7,8 +11,7 @@ const programs = [
       "Burn fat, improve your stamina and build a healthier body with our structured weight loss program.",
     duration: "12 Weeks",
     level: "Beginner",
-    image:
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80",
+    image: weightLossImage,
   },
 
   {
@@ -19,8 +22,7 @@ const programs = [
       "Build lean muscle, increase your strength and transform your physique with expert guidance.",
     duration: "16 Weeks",
     level: "Intermediate",
-    image:
-      "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1000&q=80",
+    image: muscleBuildingImage,
   },
 
   {
@@ -31,8 +33,7 @@ const programs = [
       "Push your limits with progressive strength training designed to improve power and performance.",
     duration: "10 Weeks",
     level: "Advanced",
-    image:
-      "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1000&q=80",
+    image: strengthTrainingImage,
   },
 ];
 

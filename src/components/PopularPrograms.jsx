@@ -2,9 +2,9 @@ import React from "react";
 import { ArrowUpRight, Clock, Dumbbell } from "lucide-react";
 import programs from "../data/programs";
 
-const ProgramCard = ({ program }) => {
+const ProgramCard = ({ program, index }) => {
   return (
-    <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0a0f0d] transition-all duration-500 hover:-translate-y-2 hover:border-[#9AF358]/40 hover:shadow-[0_20px_60px_rgba(154,243,88,0.08)]">
+    <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0a0f0d] transition-all duration-500 hover:-translate-y-2 hover:border-[#9AF358]/40 hover:shadow-[0_20px_60px_rgba(154,243,88,0.08)]" data-aos="fade-up" data-aos-delay={index * 120}>
 
       {/* Image */}
 
@@ -112,7 +112,7 @@ const PopularPrograms = () => {
 
         <div className="mb-12 flex flex-col justify-between gap-7 md:flex-row md:items-end">
 
-          <div>
+          <div data-aos="fade-down">
 
             {/* Small Heading */}
 
@@ -147,6 +147,7 @@ const PopularPrograms = () => {
 
           <a
             href="/programs"
+            data-aos="fade-up"
             className="group inline-flex w-fit items-center gap-3 border-b border-[#9AF358] pb-2 text-sm font-bold uppercase tracking-wider text-[#9AF358]"
           >
             View All Programs
@@ -164,10 +165,11 @@ const PopularPrograms = () => {
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-          {programs.map((program) => (
+          {programs.map((program, index) => (
             <ProgramCard
               key={program.id}
               program={program}
+              index={index}
             />
           ))}
 

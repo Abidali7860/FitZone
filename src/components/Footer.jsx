@@ -47,8 +47,8 @@ const Footer = () => {
       path: "/programs",
     },
     {
-      name: "Trainers",
-      path: "/trainers",
+      name: "Exercises",
+      path: "/exercises",
     },
     {
       name: "Membership",

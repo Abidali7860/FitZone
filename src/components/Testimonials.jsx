@@ -21,7 +21,7 @@ const testimonials = [
     name: "Rahul Sharma",
     role: "Weight Loss Member",
     image:
-      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&q=80",
+      "src/assets/images/testimonials/1.webp",
     rating: 5,
     message:
       "FitZone completely changed the way I approach fitness. The trainers are supportive, the environment is amazing and I have finally started seeing real results.",
@@ -32,7 +32,7 @@ const testimonials = [
     name: "Arjun Mehta",
     role: "Muscle Building Member",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80",
+      "src/assets/images/testimonials/2.webp",
     rating: 5,
     message:
       "The trainers actually understand your goals and help you train accordingly. I have gained strength, confidence and consistency since joining FitZone.",
@@ -43,7 +43,7 @@ const testimonials = [
     name: "Priya Singh",
     role: "Fitness Member",
     image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80",
+      "src/assets/images/testimonials/3.webp",
     rating: 5,
     message:
       "I was nervous about joining a gym, but everyone here made me feel comfortable. The atmosphere is motivating and the workouts are never boring.",
@@ -54,7 +54,7 @@ const testimonials = [
     name: "Aman Verma",
     role: "Strength Training Member",
     image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80",
+      "src/assets/images/testimonials/4.webp",
     rating: 5,
     message:
       "The equipment is excellent and the trainers are always ready to help. FitZone has helped me become much stronger and more disciplined.",
@@ -65,7 +65,7 @@ const testimonials = [
     name: "Neha Kapoor",
     role: "Fitness Member",
     image:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80",
+      "src/assets/images/testimonials/5.webp",
     rating: 5,
     message:
       "What I love most about FitZone is the community. Everyone is focused on improving themselves and that keeps me motivated every single day.",
@@ -82,7 +82,7 @@ const Testimonials = () => {
 
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
 
-          <div>
+          <div data-aos="fade-down">
 
             <div className="mb-5 flex items-center gap-3">
 
@@ -108,7 +108,7 @@ const Testimonials = () => {
           </div>
 
 
-          <p className="max-w-md text-sm leading-7 text-gray-500 md:text-right">
+          <p className="max-w-md text-sm leading-7 text-gray-500 md:text-right" data-aos="fade-up">
             Real stories from people who decided to stop making excuses,
             start training and become stronger every day.
           </p>
@@ -118,7 +118,7 @@ const Testimonials = () => {
 
         {/* ================= SLIDER ================= */}
 
-        <div className="mt-12">
+        <div className="mt-12" data-aos="fade-up" data-aos-delay="150">
 
           <Swiper
             modules={[Autoplay, Pagination]}

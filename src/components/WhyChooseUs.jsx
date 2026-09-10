@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
 
           {/* LEFT CONTENT */}
 
-          <div>
+          <div data-aos="fade-down">
 
             {/* Small Heading */}
 
@@ -80,7 +80,7 @@ const WhyChooseUs = () => {
 
           {/* RIGHT INTRO */}
 
-          <div className="max-w-2xl lg:justify-self-end">
+          <div className="max-w-2xl lg:justify-self-end" data-aos="fade-up" data-aos-delay="150">
 
             <p className="text-base leading-7 text-gray-400 md:text-lg">
               At FitZone, we believe fitness is not just about lifting
@@ -116,6 +116,8 @@ const WhyChooseUs = () => {
             return (
               <div
                 key={feature.id}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
                 className={`group relative overflow-hidden rounded-2xl border border-white/10 bg-[#050807] p-7 transition-all duration-500 hover:-translate-y-2 hover:border-[#9AF358]/40 hover:shadow-[0_20px_50px_rgba(154,243,88,0.08)] ${
                   index === 0
                     ? "sm:col-span-2 lg:col-span-1"
@@ -166,7 +168,7 @@ const WhyChooseUs = () => {
 
         {/* ================= BOTTOM STATS ================= */}
 
-        <div className="mt-6 grid grid-cols-2 overflow-hidden rounded-2xl border border-white/10 bg-[#050807] sm:grid-cols-4">
+        <div className="mt-6 grid grid-cols-2 overflow-hidden rounded-2xl border border-white/10 bg-[#050807] sm:grid-cols-4" data-aos="zoom-in" data-aos-delay="150">
 
           <div className="border-b border-white/10 p-6 text-center sm:border-b-0 sm:border-r">
             <h3 className="text-3xl font-black text-[#9AF358]">

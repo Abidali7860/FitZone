@@ -8,9 +8,10 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Programs", path: "/programs" },
-    { name: "Trainers", path: "/trainers" },
+    { name: "Exercises", path: "/exercises" },
     { name: "Membership", path: "/membership" },
     { name: "Contact", path: "/contact" },
+    
   ];
 
   return (
@@ -24,11 +25,14 @@ const Navbar = () => {
           {/* LOGO */}
 
           <NavLink to="/" onClick={() => setIsOpen(false)}>
-            <img
-              src="/logo.png"
-              alt="FitZone"
-              className="w-32 object-contain md:w-36"
-            />
+            <h2 className="text-3xl text-white font-black uppercase tracking-tight">
+
+                FIT
+                <span className="text-[#9AF358]">
+                  ZONE
+                </span>
+
+              </h2>
           </NavLink>
 
 
