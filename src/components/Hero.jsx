@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
+import hero1 from "../assets/images/hero/hero1.webp";
+import hero2 from "../assets/images/hero/hero2.webp";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -10,7 +12,7 @@ const slides = [
   {
     id: 1,
     image:
-      "src/assets/images/hero/hero1.webp",
+      hero1,
     smallTitle: "WELCOME TO FITZONE",
     title: "BUILD YOUR",
     highlight: "STRONGEST",
@@ -21,7 +23,7 @@ const slides = [
   {
     id: 2,
     image:
-      "src/assets/images/hero/hero2.webp",
+      hero2,
     smallTitle: "TRAIN HARD. STAY STRONG.",
     title: "YOUR BODY",
     highlight: "YOUR POWER",

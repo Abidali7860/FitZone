@@ -11,6 +11,11 @@ import {
   Autoplay,
   Pagination,
 } from "swiper/modules";
+import testimonialOne from "../assets/images/testimonials/1.webp";
+import testimonialTwo from "../assets/images/testimonials/2.webp";
+import testimonialThree from "../assets/images/testimonials/3.webp";
+import testimonialFour from "../assets/images/testimonials/4.webp";
+import testimonialFive from "../assets/images/testimonials/5.webp";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -20,8 +25,7 @@ const testimonials = [
     id: 1,
     name: "Rahul Sharma",
     role: "Weight Loss Member",
-    image:
-      "src/assets/images/testimonials/1.webp",
+    image: testimonialOne,
     rating: 5,
     message:
       "FitZone completely changed the way I approach fitness. The trainers are supportive, the environment is amazing and I have finally started seeing real results.",
@@ -31,8 +35,7 @@ const testimonials = [
     id: 2,
     name: "Arjun Mehta",
     role: "Muscle Building Member",
-    image:
-      "src/assets/images/testimonials/2.webp",
+    image: testimonialTwo,
     rating: 5,
     message:
       "The trainers actually understand your goals and help you train accordingly. I have gained strength, confidence and consistency since joining FitZone.",
@@ -42,8 +45,7 @@ const testimonials = [
     id: 3,
     name: "Priya Singh",
     role: "Fitness Member",
-    image:
-      "src/assets/images/testimonials/3.webp",
+    image: testimonialThree,
     rating: 5,
     message:
       "I was nervous about joining a gym, but everyone here made me feel comfortable. The atmosphere is motivating and the workouts are never boring.",
@@ -53,8 +55,7 @@ const testimonials = [
     id: 4,
     name: "Aman Verma",
     role: "Strength Training Member",
-    image:
-      "src/assets/images/testimonials/4.webp",
+    image: testimonialFour,
     rating: 5,
     message:
       "The equipment is excellent and the trainers are always ready to help. FitZone has helped me become much stronger and more disciplined.",
@@ -64,8 +65,7 @@ const testimonials = [
     id: 5,
     name: "Neha Kapoor",
     role: "Fitness Member",
-    image:
-      "src/assets/images/testimonials/5.webp",
+    image: testimonialFive,
     rating: 5,
     message:
       "What I love most about FitZone is the community. Everyone is focused on improving themselves and that keeps me motivated every single day.",

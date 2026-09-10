@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 
 import memberships from "../data/memberships";
+import heroImage from "../assets/images/hero/hero1.webp";
 
 const Membership = () => {
   const [billing, setBilling] = useState("monthly");
@@ -61,7 +62,7 @@ const faqs = [
       <section className="relative flex min-h-[60vh] items-center overflow-hidden px-6 pt-28 md:px-10 lg:px-16">
 
         <img
-          src="src/assets/images/hero/hero1.webp"
+          src={heroImage}
           alt="FitZone Membership"
           className="absolute inset-0 h-full w-full object-cover"
         />

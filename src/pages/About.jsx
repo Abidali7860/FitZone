@@ -10,6 +10,8 @@ import {
   Users,
   Zap,
 } from "lucide-react";
+import heroImage from "../assets/images/hero/hero1.webp";
+import aboutImage from "../assets/images/about/abt.webp";
 
 const About = () => {
   const features = [
@@ -72,7 +74,7 @@ const About = () => {
       <section className="relative flex h-[50vh] md:h-[65vh] items-center overflow-hidden">
 
         <img
-          src="src/assets/images/hero/hero1.webp"
+          src={heroImage}
           alt="FitZone Gym"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -176,7 +178,7 @@ const About = () => {
             <div className="relative h-[500px] overflow-hidden rounded-2xl md:h-[600px]">
 
               <img
-                src="src/assets/images/about/abt.webp"
+                src={aboutImage}
                 alt="Fitness training"
                 className="h-full w-full object-cover transition duration-700 hover:scale-105"
               />
@@ -472,7 +474,7 @@ const About = () => {
       <section className="relative overflow-hidden px-6 py-24 md:px-10 lg:px-16 lg:py-32">
 
         <img
-          src="src/assets/images/hero/hero1.webp"
+          src={heroImage}
           alt="Training"
           className="absolute inset-0 h-full w-full object-cover"
         />

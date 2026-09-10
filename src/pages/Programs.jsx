@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 
 import programs from "../data/programs";
+import heroImage from "../assets/images/hero/hero1.webp";
 
 const Programs = () => {
   const [search, setSearch] = useState("");
@@ -24,7 +25,7 @@ const Programs = () => {
       <section className="relative flex min-h-[55vh] items-center overflow-hidden px-6 pt-28 md:px-10 lg:px-16">
 
         <img
-          src="src/assets/images/hero/hero1.webp"
+          src={heroImage}
           alt="Gym"
           className="absolute inset-0 h-full w-full object-cover"
         />

@@ -14,6 +14,7 @@ import {
   FaInstagram,
   FaYoutube,
 } from "react-icons/fa";
+import contactImage from "../assets/images/about/contact.webp";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -110,7 +111,7 @@ const Contact = () => {
       <section className="relative flex h-[50vh] md:h-[60vh] items-center overflow-hidden px-6 pt-28 md:px-10 lg:px-16">
 
         <img
-          src="src/assets/images/about/contact.webp"
+          src={contactImage}
           alt="Contact FitZone"
           className="absolute inset-0 h-full w-full object-cover"
         />

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { ArrowUpRight, Check } from "lucide-react";
+import aboutImage from "../assets/images/about/abt.webp";
 
 const About = () => {
   const typedRef = useRef(null);
@@ -36,7 +37,7 @@ const About = () => {
           <div className="relative h-[450px] overflow-hidden rounded-2xl md:h-[550px]">
 
             <img
-              src="src/assets/images/about/abt.webp"
+              src={aboutImage}
               alt="FitZone Gym"
               className="h-full w-full object-cover transition duration-700 hover:scale-105"
             />
