@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { ArrowUpRight, Check } from "lucide-react";
 import aboutImage from "../assets/images/about/abt.webp";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const typedRef = useRef(null);
@@ -187,7 +188,7 @@ const About = () => {
 
           {/* CTA */}
 
-          <a
+          <Link
             href="/about"
             className="group mt-9 inline-flex items-center gap-3 border-b border-[#9AF358] pb-2 text-sm font-bold uppercase tracking-wider text-[#9AF358] transition-all duration-300 hover:gap-5"
           >
@@ -197,7 +198,7 @@ const About = () => {
               size={19}
               className="transition-transform duration-300 group-hover:rotate-45"
             />
-          </a>
+          </Link>
 
         </div>
 

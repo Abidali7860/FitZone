@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowUpRight, Clock, Dumbbell } from "lucide-react";
 import programs from "../data/programs";
+import { Link } from "react-router-dom";
 
 const ProgramCard = ({ program, index }) => {
   return (
@@ -145,7 +146,7 @@ const PopularPrograms = () => {
 
           {/* View All */}
 
-          <a
+          <Link
             href="/programs"
             data-aos="fade-up"
             className="group inline-flex w-fit items-center gap-3 border-b border-[#9AF358] pb-2 text-sm font-bold uppercase tracking-wider text-[#9AF358]"
@@ -156,7 +157,7 @@ const PopularPrograms = () => {
               size={18}
               className="transition-transform duration-300 group-hover:rotate-45"
             />
-          </a>
+          </Link>
 
         </div>
 
