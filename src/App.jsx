@@ -13,6 +13,7 @@ import ExerciseDetail from "./pages/ExerciseDetail";
 import Membership from "./pages/Membership";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const { pathname } = useLocation();
@@ -24,7 +25,7 @@ function App() {
   return (
     <>
       <Navbar />
-
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
